@@ -1,8 +1,8 @@
-import EsriSketchViewModel from '@arcgis/core/widgets/Sketch/SketchViewModel';
+import { useLargeDep } from "./use-large-dep";
 
 describe('test', () => {
   it('test', () => {
-    new EsriSketchViewModel();
+    useLargeDep();
 
     expect(true).toBe(true);
   });
