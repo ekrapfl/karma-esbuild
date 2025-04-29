@@ -1,15 +1,9 @@
-import { test } from "./test";
+import EsriSketchViewModel from '@arcgis/core/widgets/Sketch/SketchViewModel';
 
-export const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+describe('test', () => {
+  it('test', () => {
+    new EsriSketchViewModel();
 
-describe("test", () => {
-  it("Test with 3s wait", async () => {
-    await sleep(3000);
-    expect(test()).toBe(true);
+    expect(true).toBe(true);
   });
-
-  for (let i = 1; i < 101; i++)
-    it(`Test ${i}`, () => {
-      expect(test()).toBe(true);
-    });
 });
